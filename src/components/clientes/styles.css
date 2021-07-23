@@ -1,0 +1,119 @@
+.container-clientes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+
+.header-clientes {
+    display: flex;
+    align-items: center;
+    flex-direction: center;
+    justify-content: space-between;
+    background-color: #444bb8;
+    width: 100%;
+    height: 100px;
+}
+
+.header-clientes p {
+    font-size: 18px;
+    color: white;
+    margin-right: 100px;
+    margin-bottom: 2px;
+}
+
+.header-clientes h1 {
+    font-size: 30px;
+    color: white;
+    margin-left: 100px;
+}
+
+.divInput {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    margin-top: 80px;
+}
+
+.divInput input {
+    width: 600px;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    box-shadow: #444bb8 0px 0px 0.2em;
+    outline: none;
+}
+
+
+.divSexo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+    width: 100%;
+    height: 50px;
+    background-color: red;
+}
+
+.divSexo input {
+    width: 100px;
+    padding: 10px;
+}
+
+.divBtn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+}
+
+
+.divBtn button {  
+    border-radius: 18px;
+    padding: 10px;
+    margin-top: 5px;
+    width: 250px;
+    background-color:#444bb8;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: #444bb8 0px 0px 0.3em;
+}
+
+.divBtn p {
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+    margin: 14px;
+}
+
+.divBtn span {
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+    margin: 14px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+}
+
+.footer p {
+    font-size: 12px;
+    margin-top: 1px;
+    font-weight: bold;
+    color: #444bb8;
+}
