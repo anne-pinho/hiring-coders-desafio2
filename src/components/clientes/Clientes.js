@@ -9,7 +9,6 @@ function Clientes() {
     const [email, setEmail] = useState('');
     const [endereco, setEndereco] = useState('');
     const [dataNascimento, setDataNascimento] = useState('');
-    const [sexo, setSexo] = useState('masculino');
     const [isSuccess, setIsSuccess] = useState(false);
     const [isEmpty, setIsEmpty] = useState(false);
 
@@ -29,12 +28,9 @@ function Clientes() {
         setDataNascimento(event.target.value);
     }
 
-    function handleSexo(event) {
-        setSexo(event.target.value);
-    }
 
     function handleClick() {
-        if (nome === '' || email === '' || endereco === '' || dataNascimento === '' || sexo === '') {
+        if (nome === '' || email === '' || endereco === '' || dataNascimento === '') {
             setIsEmpty(true);
 
         } else {
@@ -42,8 +38,7 @@ function Clientes() {
                 nome,
                 email,
                 endereco,
-                dataNascimento,
-                sexo
+                dataNascimento
             }
             //localStorage.clear();
             localStorage.setItem('Cliente', JSON.stringify(clientes))
@@ -67,14 +62,7 @@ function Clientes() {
                 <input type="text" id="dataNascimento" placeholder="Data de Nascimento" value={dataNascimento} onChange={handleNascimento} />
             </div>
 
-            <div className="divSexo">
-                <label >Sexo:</label>
-                <label htmlFor="sexoMasculino">Masculino</label>
-                <input type="radio" id="sexoMasculino" name="sexo" value="masculino" onChange={handleSexo} />
-                <label htmlFor="sexoFeminino">Feminino</label>
-                <input type="radio" id="sexoFeminino" name="sexo" value="feminino" onChange={handleSexo} />
 
-            </div>
 
             <div className="divBtn">
                 <button type="submit" onClick={handleClick}>CADASTRAR</button>
@@ -83,9 +71,7 @@ function Clientes() {
             </div>
 
             <div className="footer">
-                <Link to="https://github.com/carol-pinho">
-                    <p>Desenvolvido por Anne Pinho</p>
-                </Link>
+                <p>Desenvolvido por Anne Pinho</p>
                 <p>Desafio 2 - Hiring Coders</p>
             </div>
         </div>

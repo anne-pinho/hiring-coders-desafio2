@@ -69,9 +69,7 @@ function Produtos() {
             </div>
 
             <div className="footer">
-                <Link to="https://github.com/carol-pinho">
-                    <p>Desenvolvido por Anne Pinho</p>
-                </Link>
+                <p>Desenvolvido por Anne Pinho</p>
                 <p>Desafio 2 - Hiring Coders</p>
             </div>
 
