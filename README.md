@@ -15,7 +15,7 @@ yarn start
 ```
 
 
-Para visuaizar online: https://hiring-coders-desafio2.netlify.app/
+Para visualizar online: https://hiring-coders-desafio2.netlify.app/
 
 
 
